@@ -21,7 +21,7 @@ ADD shell.sh /shell.sh
 
 RUN chmod +x start.sh shell.sh
 
-VOLUME ["/root/.ssh", "/media/"]
+VOLUME ["/root/.ssh", "/media/", "/var/www/"]
 
 EXPOSE 8000
 
