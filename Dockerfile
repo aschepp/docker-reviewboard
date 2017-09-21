@@ -7,7 +7,7 @@ RUN yum install -y pyliblzma
 
 RUN yum install -y epel-release && \
     yum install -y ReviewBoard uwsgi \
-      uwsgi-plugin-python python-ldap python-pip python2-boto python-pygments && \
+      uwsgi-plugin-python python-ldap python-pip python2-boto python-pygments2 && \
     yum install -y postgresql && \
     yum clean all
 
