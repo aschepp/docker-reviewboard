@@ -19,6 +19,7 @@ RUN pip install 'django-storages<1.3'
 ADD start.sh /start.sh
 ADD uwsgi.ini /uwsgi.ini
 ADD shell.sh /shell.sh
+ADD passwd.template /passwd.template
 
 RUN chmod +x start.sh shell.sh
 
