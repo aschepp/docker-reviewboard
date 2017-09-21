@@ -9,6 +9,7 @@ RUN yum install -y epel-release && \
     yum install -y ReviewBoard uwsgi \
       uwsgi-plugin-python python-ldap python-pip python2-boto python-pygments2 && \
     yum install -y postgresql && \
+    yum install -y nss_wrapper gettext && \
     yum clean all
 
 # ReviewBoard runs on django 1.6, so we need to use a compatible django-storages
