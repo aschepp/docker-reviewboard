@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos/python-27-centos7
 MAINTAINER igor.katson@gmail.com
 
 # This is needed in for xz compression in case you can't install EPEL.
