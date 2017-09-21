@@ -3,7 +3,7 @@ MAINTAINER igor.katson@gmail.com
 
 # This is needed in for xz compression in case you can't install EPEL.
 # See https://github.com/ikatson/docker-reviewboard/issues/10
-RUN yum install -y pyliblzma
+RUN yum install -y pyliblzma && yum clean all -y
 
 RUN yum install -y epel-release && \
     yum install -y ReviewBoard uwsgi \
