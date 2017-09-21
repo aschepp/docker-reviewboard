@@ -12,6 +12,7 @@ services:
             - /root/.ssh
             - /media
             - /var/www
+            - /etc/reviewboard
         depends_on:
             - postgres
             - memcached
